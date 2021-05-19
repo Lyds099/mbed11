@@ -9,14 +9,14 @@ char = s.read(2)
 print("Enter AT mode.")
 print(char.decode())
 
-s.write("ATMY 140\r\n".encode())
+s.write("ATMY 177\r\n".encode())
 char = s.read(3)
-print("Set MY 140.")
+print("Set MY 177.")
 print(char.decode())
 
-s.write("ATDL 240\r\n".encode())
+s.write("ATDL 277\r\n".encode())
 char = s.read(3)
-print("Set DL 240.")
+print("Set DL 277.")
 print(char.decode())
 
 s.write("ATID 1\r\n".encode())
