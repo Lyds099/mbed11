@@ -49,6 +49,7 @@ print("start sending RPC")
 while True:
     # send RPC to remote
     s.write("/getAcc/run 1\r".encode())
+    print("/getAcc/run 1\r")
     time.sleep(1)
 
 s.close()
